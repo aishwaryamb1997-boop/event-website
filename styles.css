@@ -1,0 +1,403 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+
+body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    background: radial-gradient(
+        circle at top right,
+        #6f70ff,
+        #5a5ce6 40%,
+        #4a4edb
+    );
+    color: white;
+    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow-y: auto;   /* allow vertical scroll */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: white;
+    color: #5a5ce6;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+/* TEXT LAYER */
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-title {
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    max-width: 700px;
+}
+
+/* ================= CTA BUTTON ================= */
+
+.cta-btn {
+    margin-top: 42px;
+    padding: 18px 52px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: white;
+    color: #5a5ce6;
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.35);
+}
+.cta-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================= SHAPES ================= */
+
+.shapes {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.9;
+    filter: saturate(1.05);
+}
+
+/* SPHERE (between text lines) */
+.sphere {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        #8f91ff,
+        #3f42c9 70%
+    );
+    box-shadow:
+        0 40px 80px rgba(0, 0, 0, 0.25),
+        inset -10px -10px 30px rgba(0, 0, 0, 0.3);
+    top: 110px;
+    right: 260px;
+}
+
+/* CAPSULE (under "Websites") */
+.capsule {
+    width: 460px;
+    height: 170px;
+    border-radius: 100px;
+    background: linear-gradient(
+        135deg,
+        #7f81ff,
+        #3d40c6
+    );
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.3),
+        inset -10px -10px 20px rgba(0, 0, 0, 0.25);
+    transform: rotate(-22deg);
+    right: 80px;
+    top: 360px;
+}
+
+/* BLOB (soft background accent) */
+.blob {
+    width: 180px;
+    height: 180px;
+    border-radius: 40%;
+    background: radial-gradient(
+        circle,
+        #9a9cff,
+        #5b5fe8
+    );
+    filter: blur(3px);
+    bottom: 220px;
+    left: 520px;
+}
+/* ================= SPEAKERS SECTION ================= */
+
+.speakers-section {
+    background: #dceeff;
+    padding: 100px 120px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1b1f6b;
+    margin-bottom: 80px;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.speaker-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.speaker-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #1b1f6b;
+}
+
+.speaker-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 260px;
+    color: #4a4a68;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ================= SCHEDULE SECTION ================= */
+
+.schedule-section {
+    background: #4a4bd1;
+    padding: 120px;
+    text-align: center;
+}
+
+.section-title.light {
+    color: white;
+    margin-bottom: 80px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.schedule-day {
+    color: white;
+}
+
+.day-name {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.day-date {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 8px 0 40px;
+}
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 24px 0;
+}
+
+.time {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.event {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 16px 0;
+}
+/* ================= CTA SECTION ================= */
+
+.cta-section {
+    background: #1b1464;
+    min-height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 120px;
+}
+
+.cta-content {
+    max-width: 420px;
+    color: white;
+}
+
+.cta-title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.cta-description {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 36px;
+}
+
+/* Secondary CTA button variant */
+.cta-btn.secondary {
+    border-color: white;
+    color: white;
+}
+
+.cta-btn.secondary:hover {
+    background: white;
+    color: #1b1464;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ================= BOOKING FORM ================= */
+
+.booking-section {
+    background: #f5f7ff;
+    padding: 120px;
+    text-align: center;
+}
+
+.booking-section .section-title {
+    color: #1b1f6b;
+    margin-bottom: 60px;
+}
+
+.booking-form {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1b1f6b;
+}
+
+.form-group input,
+.form-group select {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #6671ef;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #5a5ce6;
+}
+
+.form-success {
+    display: none;
+    margin-top: 24px;
+    color: #2d7a46;
+    font-weight: 600;
+}
+/* ================= FORM VALIDATION ================= */
+
+.error-message {
+    display: none;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #d93025;
+}
+
+.form-group.invalid input,
+.form-group.invalid select {
+    border-color: #d93025;
+}

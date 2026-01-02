@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Event Website</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">◉</div>
+    <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#cta">Get in Touch</a>
+
+</nav>
+
+</header>
+
+<main class="hero" id="home">
+
+    <section class="hero-content">
+        <h1 class="hero-title">
+            Event <br />
+            Website
+        </h1>
+
+        <a href="#booking" class="cta-btn">Book Your Spot</a>
+
+
+    </section>
+
+    <div class="shapes">
+        <div class="shape sphere"></div>
+        <div class="shape capsule"></div>
+        <div class="shape blob"></div>
+    </div>
+</main>
+
+<section class="speakers-section" id="speakers">
+
+    <h2 class="section-title">Speakers</h2>
+
+    <div class="speakers-grid">
+        <div class="speaker-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+                 alt="Zawadi Thandiwe">
+            <h3>ZAWADI THANDIWE</h3>
+            <p>
+                Professional with 8+ years of experience helping brands reach their goals.
+            </p>
+        </div>
+
+        <div class="speaker-card">
+            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126"
+                 alt="Ejiro Rudo">
+            <h3>EJIRO RUDO</h3>
+            <p>
+                Skilled in problem-solving, communication, and strategic thinking.
+            </p>
+        </div>
+
+        <div class="speaker-card">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+                 alt="Daniel Saoirse">
+            <h3>DANIEL SAOIRSE</h3>
+            <p>
+                Dedicated to crafting innovative solutions that drive positive change.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="schedule-section" id="schedule">
+    <h2 class="section-title light">Schedule</h2>
+
+    <div class="schedule-grid">
+
+        <!-- MONDAY -->
+        <div class="schedule-day">
+            <span class="day-name">Monday</span>
+            <h3 class="day-date">Sep 6</h3>
+
+            <div class="schedule-item">
+                <span class="time">12:00 pm</span>
+                <span class="event">Registration and Welcome</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">2:00 pm</span>
+                <span class="event">Zawadi Thandiwe</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">7:00 pm</span>
+                <span class="event">Dinner</span>
+            </div>
+        </div>
+
+        <!-- TUESDAY -->
+        <div class="schedule-day">
+            <span class="day-name">Tuesday</span>
+            <h3 class="day-date">Sep 7</h3>
+
+            <div class="schedule-item">
+                <span class="time">7:00 am</span>
+                <span class="event">Breakfast</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">9:00 am</span>
+                <span class="event">Ejiro Rudo</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">12:30 pm</span>
+                <span class="event">Lunch</span>
+            </div>
+        </div>
+
+        <!-- WEDNESDAY -->
+        <div class="schedule-day">
+            <span class="day-name">Wednesday</span>
+            <h3 class="day-date">Sep 9</h3>
+
+            <div class="schedule-item">
+                <span class="time">7:00 am</span>
+                <span class="event">Breakfast</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">9:00 am</span>
+                <span class="event">Daniel Saoirse</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="schedule-item">
+                <span class="time">11:30 am</span>
+                <span class="event">Closing Brunch</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section" id="cta">
+    <div class="cta-content">
+        <h2 class="cta-title">
+            SAVE<br />
+            YOUR<br />
+            SPOT
+        </h2>
+
+        <p class="cta-description">
+            A unique event filled with networking, workshops, seminars,
+            and engaging conversations with the industry’s leading experts.
+        </p>
+
+        <a href="#booking" class="cta-btn secondary">Book Now</a>
+
+
+    </div>
+</section>
+
+<section class="booking-section" id="booking">
+    <h2 class="section-title">Book Your Spot</h2>
+
+    <form class="booking-form" id="bookingForm">
+
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" />
+        <span class="error-message" id="nameError">Please enter your full name.</span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" />
+        <span class="error-message" id="emailError">Please enter a valid email address.</span>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+        <span class="error-message" id="phoneError">Please enter a valid phone number.</span>
+    </div>
+
+    <div class="form-group">
+        <label for="ticket">Ticket Type</label>
+        <select id="ticket" name="ticket">
+            <option value="">Select ticket</option>
+            <option value="standard">Standard Pass</option>
+            <option value="vip">VIP Pass</option>
+        </select>
+        <span class="error-message" id="ticketError">Please select a ticket type.</span>
+    </div>
+
+    <button type="submit" class="cta-btn">
+        Confirm Booking
+    </button>
+
+    <p class="form-success" id="formSuccess">
+        Your spot has been reserved. We’ll contact you soon.
+    </p>
+
+    </form>
+
+</section>
+
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

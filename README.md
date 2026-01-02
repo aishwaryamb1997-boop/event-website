@@ -21,27 +21,36 @@ The website includes multiple sections with smooth navigation and a functional b
 ## 🖥️ Screenshots
 
 ### Hero Section
-![Hero Section](screenshots/hero.png)
+
+<img width="1919" height="1079" alt="Screenshot 2026-01-02 141808" src="https://github.com/user-attachments/assets/38396a21-bacc-497d-94cc-204a1abff793" />
 
 ---
 
 ### Speakers Section
-![Speakers Section](screenshots/speakers.png)
+
+
+<img width="1919" height="1079" alt="Screenshot 2026-01-02 141817" src="https://github.com/user-attachments/assets/01feaaa6-8d71-4e5c-ac54-dce87fb32fe9" />
+
 
 ---
 
 ### Schedule Section
-![Schedule Section](screenshots/schedule.png)
+
+<img width="1919" height="1079" alt="Screenshot 2026-01-02 141823" src="https://github.com/user-attachments/assets/1262fa21-ee94-4e39-912c-102fa584bd65" />
 
 ---
 
 ### Save Your Spot (CTA)
-![CTA Section](screenshots/cta.png)
+
+<img width="1919" height="1032" alt="Screenshot 2026-01-02 141832" src="https://github.com/user-attachments/assets/8d1070d0-03c1-4696-bb72-656548c1b88c" />
+
 
 ---
 
 ### Booking Form
-![Booking Form](screenshots/booking-form.png)
+
+<img width="1919" height="1079" alt="Screenshot 2026-01-02 141840" src="https://github.com/user-attachments/assets/87ccd702-6697-4a6f-9440-d411a0632421" />
+
 
 ---
 
@@ -68,31 +77,21 @@ The website includes multiple sections with smooth navigation and a functional b
 
 📌 Project Sections
 
-Home – Hero landing section
-
-Speakers – Featured speakers
-
-Schedule – Event timeline
-
-Get in Touch – Call to action
-
-Book Your Spot – Booking form
-
-Navigation is handled using anchor links with smooth scrolling.
+  Home – Hero landing section
+  Speakers – Featured speakers
+  Schedule – Event timeline
+  Get in Touch – Call to action
+  Book Your Spot – Booking form
+  Navigation is handled using anchor links with smooth scrolling.
+---
 
 📈 Future Enhancements
-
 Responsive mobile layout
-
 Backend integration (Node / .NET)
-
 Email confirmation
-
 Payment gateway integration
 
-Scroll animations
-
-Deployment via GitHub Pages / Netlify
+---
 
 👩‍💻 Author
 

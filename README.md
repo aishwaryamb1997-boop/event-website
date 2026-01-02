@@ -78,10 +78,15 @@ The website includes multiple sections with smooth navigation and a functional b
 📌 Project Sections
 
   Home – Hero landing section
+  
   Speakers – Featured speakers
+  
   Schedule – Event timeline
+  
   Get in Touch – Call to action
+
   Book Your Spot – Booking form
+  
   Navigation is handled using anchor links with smooth scrolling.
 ---
 
